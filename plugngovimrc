@@ -1,0 +1,15 @@
+syntax on
+set number
+colorscheme desert
+set backspace=indent,eol,start
+set modelines=0
+set incsearch   " show search matches as you type
+set ignorecase  " case insensitive search
+set smartcase   " If a capital letter is included in search, make it case-sensitive
+set nohlsearch  " dont highlight search results
+set background=dark
+
+if !(&filetype == "txt")
+  highlight WhiteSpaces ctermbg=darkblue guibg=#55aa55
+  match WhiteSpaces /\s\+$/
+endif
